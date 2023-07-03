@@ -1,6 +1,6 @@
 /* Style General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -99,13 +99,19 @@ body {
   margin-bottom: 20px;
 }
 
-.text-h1{
+.text-30{
   font-size: 30px;
 }
 
-.text-h2{
+.text-20{
   font-size: 20px;
+}
+
+.font-w-400{
   font-weight: 400;
+}
+
+.text-c-2c2e31{
   color: #2c2e31;
 }
 
@@ -141,11 +147,21 @@ body {
   color: orange !important;
 }
 
-.bh:hover{
-  border-bottom: solid 1px orange;
-  
+.botton-ig {
+  background-color: #0095f6;
+  border-radius: 10px;
+  padding: 7px 16px;
 }
 
+.botton-ig:hover{
+  background-color: #0078c9;
+}
+
+.botton-in {
+  background-color: #0a66c2;
+  border-radius: 50px;
+  padding: 7px 16px;
+}
 
 /* Estilos para las barras de habilidades */
 
