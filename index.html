@@ -19,39 +19,41 @@
 </head>
 <body>
   <header>
-    <nav class="bar-main">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="menu">
+      <ul class="menu_items">
+        <li><a href="#about" class="show">About</a></li>
+        <li><a href="#experience" class="show2">Experience</a></li>
+        <li><a href="#skills" class="show3">Skills</a></li>
+        <li><a href="#education" class="show4">Education</a></li>
+        <li><a href="#contact" class="show5">Contact</a></li>
       </ul>
+      <span class="btn_menu">
+        <i class="fas fa-bars"></i>
+    </span>
     </nav>
-  </header>
 
-  <div class="back-container"></div>
-  <div class="container conthrader">
-    <div class="container perfil">
-      <img src="img/ico.jpg" alt="full stak" class="img-ico">
-    </div>
+    <div class="back-container"></div>
+    <div class="container contheader">
+      <div class="container perfil">
+        <img src="img/ico.jpg" alt="full stak" class="img-ico">
+      </div>
+      
+      <div class="container cont-texts" style="text-align: center;">
+        <h2 id="text-2" class="text text-20 font-w-400 text-c-2c2e31"></h2>
+        <h1 id="text" class="text text-30"></h1>
+      </div>
     
-    <div class="container cont-texts" style="text-align: center;">
-      <h2 id="text-2" class="text text-20 font-w-400 text-c-2c2e31"></h2>
-      <h1 id="text" class="text text-30"></h1>
+      <nav class="container bar-perfil">
+        <ul>
+          <li class="col-sm-1"><i class="fa-regular fa-user fa selected" data-texto="John Smith" data-texto2="Hi, my name is"  id="user"></i></li>
+          <li class="col-sm-1"><i class="fa-regular fa-envelope fa" data-texto="johnsmith@email.com" data-texto2="My email address is" id="envelope"></i></li>
+          <li class="col-sm-1"><i class="fa-regular fa-calendar-days fa" data-texto="4/7/1964" data-texto2="My birthday is" id="calendar"></i></li>
+          <li class="col-sm-1"><i class="fa-solid fa-map-location-dot fa" data-texto="123 Main Street, Cityville, XYZ" data-texto2="My address is" id="map"></i></li>
+          <li class="col-sm-1"><i class="fa-solid fa-phone fa" data-texto="+1 (555) 1234567" data-texto2="My phone number is" id="phone"></i></li>
+        </ul>
+      </nav>
     </div>
-  
-    <nav class="container bar-perfil">
-      <ul>
-        <li class="col-sm-1"><i class="fa-regular fa-user fa selected" data-texto="John Smith" data-texto2="Hi, my name is"  id="user"></i></li>
-        <li class="col-sm-1"><i class="fa-regular fa-envelope fa" data-texto="johnsmith@email.com" data-texto2="My email address is" id="envelope"></i></li>
-        <li class="col-sm-1"><i class="fa-regular fa-calendar-days fa" data-texto="4/7/1964" data-texto2="My birthday is" id="calendar"></i></li>
-        <li class="col-sm-1"><i class="fa-solid fa-map-location-dot fa" data-texto="123 Main Street, Cityville, XYZ" data-texto2="My address is" id="map"></i></li>
-        <li class="col-sm-1"><i class="fa-solid fa-phone fa" data-texto="+1 (555) 1234567" data-texto2="My phone number is" id="phone"></i></li>
-      </ul>
-    </nav>
-  </div>
-
+  </header>
   <main class="cont-main container">
     <div class="cont-sections row">
       <div id="about"></div>

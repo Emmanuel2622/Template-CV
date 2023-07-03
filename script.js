@@ -99,3 +99,46 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+/* Menus Show */
+addEventListener('DOMContentLoaded', () => {
+  const btn_menu = document.querySelector('.btn_menu')
+  if (btn_menu) {
+      btn_menu.addEventListener('click', () =>{
+          const menu_items = document.querySelector('.menu_items')
+          menu_items.classList.toggle('show')
+      })
+  }
+
+  const show = document.querySelector('.show')
+  if (show) {
+      show.addEventListener('click', () =>{
+          const menu_items = document.querySelector('.menu_items')
+          menu_items.classList.toggle('show')
+      })
+  }
+
+  const show2 = document.querySelector('.show2')
+  if (show2) {
+      show2.addEventListener('click', () =>{
+          const menu_items = document.querySelector('.menu_items')
+          menu_items.classList.toggle('show')
+      })
+  }
+
+  const show3 = document.querySelector('.show3')
+  if (show3) {
+      show3.addEventListener('click', () =>{
+          const menu_items = document.querySelector('.menu_items')
+          menu_items.classList.toggle('show')
+      })
+  }
+
+  const show4 = document.querySelector('.show4')
+  if (show4) {
+      show4.addEventListener('click', () =>{
+          const menu_items = document.querySelector('.menu_items')
+          menu_items.classList.toggle('show')
+      })
+  }
+})
