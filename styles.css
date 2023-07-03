@@ -42,7 +42,7 @@ body {
   display: none;
 }
 
-.btn_menu:hover{
+.btn_menu:active{
   color: orange;
 }
 
