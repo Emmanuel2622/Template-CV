@@ -58,6 +58,7 @@ body {
       display: inline-flex;
   }
   .menu_items{
+    padding: 0;
     z-index: 100;
     justify-content: center;
     text-align: center;
