@@ -1,6 +1,6 @@
 /* Style General */
 body {
-  font-family: Loto !important;
+  font-family: sans-serif !important;
   background: #fff;
 }
 
@@ -15,6 +15,7 @@ body {
   list-style: none;
   text-align: right;
   margin: 5px 5px;
+  font-family: Arial !important;
 }
 
 .menu_items li{
@@ -45,40 +46,6 @@ body {
 
 .menu_items.show{
   left: 0;
-}
-
-@media screen and (max-width: 858px) {
-  .menu{
-    padding: 0;
-  }
-
-  .btn_menu{
-    display: inline-flex;
-  }
-
-  .menu_items{
-    padding: 0;
-    z-index: 100;
-    justify-content: center;
-    text-align: center;
-    display: inline-flex;
-    margin: 0px;
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 55px);
-    background: #2c2e31;
-    opacity: 0.9;
-    top: 55px;
-    left: -100vh;
-    transition: all .4s;
-    flex-direction: column;
-    font-size: 20px;
-  }
-
-  .menu_items li{
-    padding: 10px;
-  }
-
 }
 
 .back-container {
@@ -268,15 +235,15 @@ body {
 
 @media screen and (max-width: 768px) {
   .text-30{
-    font-size: 17px;
+    font-size: 20px;
   }
   
   .text-20{
-    font-size: 15px;
+    font-size: 16px;
   }
   
   .floating-button{
-    padding: 10px 17px;
+    padding: 12px 19px;
   }
 
   .floating-button:hover {
@@ -290,11 +257,45 @@ body {
   }
 
   .fa{
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .fa.selected{
     font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 858px) {
+  .menu{
+    padding: 0;
+  }
+
+  .btn_menu{
+    display: inline-flex;
+  }
+
+  .menu_items{
+    padding: 0;
+    z-index: 100;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 55px);
+    background: #2c2e31;
+    opacity: 0.9;
+    top: 55px;
+    left: -100vh;
+    transition: all .4s;
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  .menu_items li{
+    padding: 10px;
   }
 
 }
