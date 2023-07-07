@@ -9,7 +9,7 @@
   <meta property="og:title" content="John Smith" />
   <meta property="og:type" content="CurriculumVitae" />
   <meta property="og:image" content="img/ico.jpg" />
-  <meta name="description" content="Este es un curriculum de " />
+  <meta name="description" content="" />
   <!-- CSS -->  
   <link rel="stylesheet" href="styles.css">
   <!--Library-->
@@ -18,7 +18,9 @@
   <script src="https://kit.fontawesome.com/b1ae749c97.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header -->
   <header>
+    <!-- Menu -->
     <nav class="menu">
       <ul class="menu_items">
         <li><a href="#about" class="show">About</a></li>
@@ -34,16 +36,17 @@
 
     <div class="back-container"></div>
     <div class="container contheader">
-      <div class="container perfil">
-        <img src="img/ico.jpg" alt="full stak" class="img-ico">
+      <div class="container profile">
+        <img src="img/ico.jpg" alt="John Smith" class="img-ico">
       </div>
       
+      <!-- Menu profile -->
       <div class="container cont-texts" style="text-align: center;">
-        <h2 id="text-2" class="text text-20 font-w-400 text-c-2c2e31"></h2>
-        <h1 id="text" class="text text-30"></h1>
+        <h2 id="text-2" class="text-h2 text-20 font-w-400 text-c-2c2e31"></h2>
+        <h1 id="text" class="text-h1 text-30"></h1>
       </div>
     
-      <nav class="container bar-perfil">
+      <nav class="container bar-profile">
         <ul>
           <li class="col-sm-1"><i class="fa-regular fa-user fa selected" data-texto="John Smith" data-texto2="Hi, my name is"  id="user"></i></li>
           <li class="col-sm-1"><i class="fa-regular fa-envelope fa" data-texto="johnsmith@email.com" data-texto2="My email address is" id="envelope"></i></li>
@@ -54,14 +57,19 @@
       </nav>
     </div>
   </header>
+
+  <!-- Main -->
   <main class="cont-main container">
     <div class="cont-sections row">
+
+      <!-- About -->
       <div id="about"></div>
       <section class="row-2 text-center mb-5 mt-5">
         <h2><span style="color: orange;">A</span>bout <span style="color: orange;">M</span>e</h2>
         <p class="p-3">I am a highly motivated and dedicated professional with a strong track record in project management. With over 5 years of experience in coordinating complex projects, I have a proven history of successful project delivery within established timeframes and budgets. I am passionate about leading teams, fostering collaboration, and overcoming challenges with innovative solutions. My results-oriented approach and ability to multitask allow me to remain efficient in dynamic work environments.</p>
       </section>
 
+      <!-- Experience -->
       <div id="experience"></div>
       <section class="row my-5">
         <h2><span style="color: orange;">E</span>xperience</h2>
@@ -99,7 +107,8 @@
         </div>
       </section>
 
-      <section class="p-4 my-5 mx-1 col border">
+      <!-- Skills -->
+      <section class="p-4 my-5 mx-1 col border" id="skills">
         <h2><span style="color: orange;">S</span>kills</h2>
         <ul class="lsc ls-1 mt-3">
 
@@ -153,6 +162,7 @@
         </ul>
       </section>
 
+      <!-- Education -->
       <section id="education" class="p-4 my-5 mx-1 col border">
         <h2><span style="color: orange;">E</span>ducation</h2>
         
@@ -171,6 +181,7 @@
         </div>
       </section>
 
+      <!-- Contact -->
       <div id="contact"></div>
       <section class="container">
         <h2><span class="tc-2">C</span>ontact</h2>
@@ -181,7 +192,7 @@
 
             <li class="col-md mt-4" >
               <i class="fa-brands fa-instagram" style="font-size: 20px; color: #FF004E;"></i>
-              <span class="text-20 ms-2 text-c-2c2e31">@ johnsmith</span>
+              <span class="text-20 ms-2 text-c-2c2e31">johnsmith</span>
               <span class="ms-3 botton-ig"><a href="" class="text-white text-decoration-none">Follow</a></span>
             </li>
             
@@ -200,7 +211,7 @@
   <i class="floating-button"><span class="fa-solid fa-angle-up"></span></i>
 
   <footer class="p-3" style="background-color: #2c2e31;">
-    <p class="m-0 text-white"><span class="tc-2">&copy;</span> 2023 John Smith</p>
+    <p class="m-0 text-white"><span class="tc-2">&copy;</span> 2023 </p>
   </footer>
 
   <script src="script.js"></script>

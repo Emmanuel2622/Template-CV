@@ -1,4 +1,4 @@
-// Script para el botón flotante
+// Script for the floating button
 const floatingButton = document.querySelector('.floating-button');
 floatingButton.addEventListener('click', scrollToTop);
 
@@ -10,7 +10,7 @@ function scrollToTop() {
 };
 
 
-// Script para barra de perfil
+// Script for profile bar
 const elements = document.querySelectorAll('.fa');
 const user = document.getElementById('user');
 const text = document.getElementById('text');
@@ -44,7 +44,7 @@ elements.forEach(function(element) {
   });
 });
 
-// Inicialización del elemento user
+// Initialization of the user element
 const content2 = user.getAttribute('data-texto2');
 text2.textContent = content2;
 
@@ -54,7 +54,7 @@ text.textContent = content;
 user.classList.add('selected');
 
 
-// Inicialización de barra progresiva
+// Progressive bar initialization
 function animateProgressBar(progressBar, targetValue) {
   const progressFill = progressBar.querySelector('.progress-bar__fill');
   const progressText = progressBar.querySelector('.progress-bar__text');
@@ -100,45 +100,62 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 
-/* Menus Show */
 addEventListener('DOMContentLoaded', () => {
-  const btn_menu = document.querySelector('.btn_menu')
+  const btn_menu = document.querySelector('.btn_menu');
+  const menu_items = document.querySelector('.menu_items');
   if (btn_menu) {
-      btn_menu.addEventListener('click', () =>{
-          const menu_items = document.querySelector('.menu_items')
-          menu_items.classList.toggle('show')
-      })
+    btn_menu.addEventListener('click', () => {
+      menu_items.classList.toggle('show');
+      if (menu_items.classList.contains('show')) {
+        document.body.style.overflow = 'hidden'; // Disable page scrolling
+      } else {
+        document.body.style.overflow = 'auto'; // Enable page scrolling
+      }
+    });
   }
 
-  const show = document.querySelector('.show')
+  const show = document.querySelector('.show');
   if (show) {
-      show.addEventListener('click', () =>{
-          const menu_items = document.querySelector('.menu_items')
-          menu_items.classList.toggle('show')
-      })
+    show.addEventListener('click', () => {
+      const menu_items = document.querySelector('.menu_items');
+      menu_items.classList.toggle('show');
+      document.body.style.overflow = 'auto'; // Enable page scrolling
+    });
   }
 
-  const show2 = document.querySelector('.show2')
+  const show2 = document.querySelector('.show2');
   if (show2) {
-      show2.addEventListener('click', () =>{
-          const menu_items = document.querySelector('.menu_items')
-          menu_items.classList.toggle('show')
-      })
+    show2.addEventListener('click', () => {
+      const menu_items = document.querySelector('.menu_items');
+      menu_items.classList.toggle('show');
+      document.body.style.overflow = 'auto'; // Enable page scrolling
+    });
   }
 
-  const show3 = document.querySelector('.show3')
+  const show3 = document.querySelector('.show3');
   if (show3) {
-      show3.addEventListener('click', () =>{
-          const menu_items = document.querySelector('.menu_items')
-          menu_items.classList.toggle('show')
-      })
+    show3.addEventListener('click', () => {
+      const menu_items = document.querySelector('.menu_items');
+      menu_items.classList.toggle('show');
+      document.body.style.overflow = 'auto'; // Enable page scrolling
+    });
   }
 
-  const show4 = document.querySelector('.show4')
+  const show4 = document.querySelector('.show4');
   if (show4) {
-      show4.addEventListener('click', () =>{
-          const menu_items = document.querySelector('.menu_items')
-          menu_items.classList.toggle('show')
-      })
+    show4.addEventListener('click', () => {
+      const menu_items = document.querySelector('.menu_items');
+      menu_items.classList.toggle('show');
+      document.body.style.overflow = 'auto'; // Enable page scrolling
+    });
+  }
+
+  const show5 = document.querySelector('.show5');
+  if (show5) {
+    show5.addEventListener('click', () => {
+      const menu_items = document.querySelector('.menu_items');
+      menu_items.classList.toggle('show');
+      document.body.style.overflow = 'auto'; // Enable page scrolling
+    });
   }
 })
